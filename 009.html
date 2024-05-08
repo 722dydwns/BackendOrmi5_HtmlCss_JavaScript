@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!-- form에 대한 간단한 설명 -->
+    <!-- [3가지 요소 기억하자]
+        form : 사용자가 입력한 데이터를 서버로 보내기 위한 장치
+        label : input과 연결되어 있는 텍스트
+        input : 사용자가 입력하는 부분
+        button : 사용자가 입력한 데이터를 서버로 보내는 버튼
+    -->
+    <form action = "" method="get">
+        <label for ="userid">아이디</label>
+        <input type="text" name="아이디" id="userid">
+
+        <label for ="userpw">패스워드</label>
+        <input type="password" name="패스워드" id="userpw">
+
+        <p>패스워드는 9자리 이상으로 특수문자 2개 이상 포함</p>
+
+        <button>로그인</button>
+    </form>
+
+    <!--
+        action : 내 요청 처리할 주소, 비어있으면 나 자신
+        method : 요청을 어떤 방식으로 보낼 지 지정
+            get : (데이터 읽기 요청)
+            post : (데이터 쓰기 요청 )
+     이런 식으로 뜬다. [ ?검색어=검색내용 ]
+    -->
+    <br>
+    <form action ="" method="get">
+        <input type = "text" name="검색어">
+        <button>검색어1</button>
+    </form>
+    <div>
+        <input type="text" id="one">
+        <button>검색2</button>
+    </div>
+</body>
+</html>
