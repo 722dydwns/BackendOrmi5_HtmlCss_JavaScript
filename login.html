@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>서비스 이름</title>
+</head>
+<body>
+    <h1>서비스 이름 </h1>
+    <!-- http://localhost:63342/htmlDay1/login.html?gender=on&skill=javascript -->
+    <section>
+        <h2>로그인</h2>
+        <form action="" method="get">
+            <label for ="user-email">이메일</label>
+            <input type="text" id="user-email">
+            <label for ="user-pw">패스워드</label>
+            <input type="text" id="user-pw">
+            <br>
+            <!--fieldset 은 영역을 묶어준다 -->
+            <fieldset>
+                <!--성별-->
+                <legend>성별</legend>
+                <label for="user-male">남</label>
+                <input type="radio" id="user-male" name="gender">
+                <label for="user-female">여</label>
+                <input type="radio" id="user-female" name="gender">
+                <label for="user-not">선택안함</label>
+                <input type="radio" id="user-not" name="gender">
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>사용 기술</legend>
+                <label for="html"> HTML </label>
+                <input type="checkbox" id="html" name="skill" value="html">
+                <label for="css"> css </label>
+                <input type="checkbox" id="css" name="skill" value="css">
+                <label for="javascript"> JavaScript </label>
+                <input type="checkbox" id="javascript" name="skill" value="javascript">
+            </fieldset>
+            <button>회원가입</button>
+        </form>
+    </section>
+</body>
+</html>
