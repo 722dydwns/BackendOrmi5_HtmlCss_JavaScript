@@ -1,0 +1,72 @@
+* {
+    font-size: 12px;
+}
+
+section {
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > div {
+        width: 350px;
+        height: 140px;
+        margin: 30px 25px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 19px 0px 18px 16px;
+        border: 1px solid #DBDBDB ;
+        border-radius: 5px;
+        justify-content: space-between;
+
+        > .title {
+            width: 240px;
+            height: 15px;
+            color: black;
+            font-weight: 400;
+        }
+
+        > .login {
+            background: #711BFF;
+            width: 318px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+
+            > img {
+                width: 64px;
+                height: 18px;
+            }
+
+            > span {
+                color: white;
+                font-weight: 500;
+            }
+        }
+
+        > .userBox {
+            display: flex;
+            width: 318px;
+            justify-content: space-between;
+
+            > div {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+    }
+}
+
+.text1 {
+    color: #767676;
+}
+
+.img1 {
+    width: 16px;
+    height: 16px;
+}
