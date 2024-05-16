@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const arr = [1, 2, 3];
+    arr.splice(1, 1, 100);
+
+    console.log(arr);
+    //sort()는 문자는 사전 순 정렬 가능
+    const ch = ['a', 'c', 'b'];
+    ch.sort();
+    console.log(ch);
+
+    //sort()는 숫자에 대해서는 .. 추가 처리 필요
+    //-> 숫자 정렬 원하는대로 안되는 이유 : 원소를 문자열로 변환 후 유니코드 순대로 정렬하기 떄문임..
+    //compareFunction 사용
+
+    const a = [1, 4, 9, 11, 0];
+    a.sort(function (a, b) {
+        return a - b;
+    });
+
+    const myArray = ["apple", "banana", "cherry", "durian", "elderberry"];
+    console.log(myArray.slice(2, 4));
+
+    const arr123 = [1, 11, 3, 22, 33 , 56];
+    console.log(arr.sort((a, b)=> a-b));//오름차순
+
+    console.log(arr.sort((a,b)=> b-a) ;//내림차순
+
+
+
+
+</script>
+</body>
+</html>

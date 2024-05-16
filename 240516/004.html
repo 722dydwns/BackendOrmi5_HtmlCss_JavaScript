@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const arr = ['참외', '키위', '감귤'];
+
+    //인자 1개
+    arr.forEach((item) => {
+        console.log(item)
+    });
+    //인자 2개 - 요소, idx
+    arr.forEach(function(item, index){
+        console.log(item);
+        console.log(index);//각 요소와 각 idx같이 접근 가능
+        arr[index] = index;
+    });
+    //인자 3개 - 요소, idx, 대상 배열
+    arr.forEach((item, index, arr)=>{
+        console.log(item);
+        console.log(index);
+        console.log(arr);//현재 순회돌고 있는 [대상 배열] 출력
+    });
+
+    const arrMap = [1, 2, 3];
+    const newArr = arr.map(function(item, index) { //map으로
+        return item * index;
+    });
+
+    console.log(newArr);
+
+    /*6보다 큰 수만 filter로 가려서 새 배열 생성하기 */
+    const arr11 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const newArr = arr11.filter(el => el > 6);
+
+    console.log(newArr);
+
+</script>
+</body>
+</html>
